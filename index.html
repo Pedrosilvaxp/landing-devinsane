@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>DEVINsane</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-nav">
+                <img src="imagens/logo.png" alt="logo da devinsane">
+                <div class="navbar-desktop">
+                    <!-- Links -->
+                    <ul class="container-nav">
+                        <li><a class="nav-link" href="#">Inicio</a></li>
+                        <li><a class="nav-link" href="#" onclick="cursScroll()">Cursos</a></li>
+                        <li><a class="nav-link" href="#" onclick="vagaScroll()">Vagas</a></li>
+                        <li><a class="nav-link" href="#" onclick="sobreScroll()">Sobre</a></li>
+                        <li><a class="nav-link" href="#" onclick="contScroll()">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-desktop">
+                    <a href="#" class="login-btn link-btn">Login</a>
+                </div>
+                <!-- End desk -->
+                
+                <!-- NAV Mobile -->
+                <div class="mobile-btn">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+                <ul class="container-mob">
+                    <li><a href="#" class="link-mob nav-link">Inicio</a></li>
+                    <li><a href="#" class="link-mob nav-link" onclick="cursScroll()">Cursos</a></li>
+                    <li><a href="#" class="link-mob nav-link" onclick="vagaScroll()">Vagas</a></li>
+                    <li><a href="#" class="link-mob nav-link" onclick="sobreScroll()">Sobre</a></li>
+                    <li><a href="#" class="link-mob nav-link" onclick="contScroll()">Contato</a></li>
+                </ul>
+                <!-- End Mobile -->
+            </div>
+        </nav>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <section class="sec-poster">
+            <div class="poster poster-inicial">
+                <div class="text">
+                    <h1 class="poster">Fala, futuro Dev!</h1>
+                    <p class="poster">O futuro está em suas mãos</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h1 class="titulo-web cursos">&lt;/Cursos&gt;</h1>
+            <div class="container-align-center">
+                <div class="item-center item-poster-foto cursos">
+                    <h1>Confira nossos cursos</h1>
+                    <p>De olho no mercado da programação.</p>
+                    <a href="#" class="link-btn">Compre agora!</a>
+                </div>
+
+                <div class="item-center">
+                    <h2>Com as linguagens</h2>
+                    <div>
+                        <i class='bx bxl-typescript linguagem' style="color: #2E77C4;"></i>
+                        <i class='bx bxl-javascript linguagem' style="color: #F6DD1E;"></i>
+                        <i class='bx bxl-css3 linguagem' style="color: #0E96CE;"></i>
+                    </div>
+                    <div>
+                        <i class='bx bxl-react linguagem' style="color: #2E77C4;"></i>
+                        <i class='bx bxl-django linguagem' style="color: #3D71A0;"></i>
+                        <i class='bx bxl-java linguagem' style="color: #F41F1D;"></i>
+                    </div>
+                    <div>
+                        <i class='bx bxl-c-plus-plus linguagem' style="color: #6598D0;"></i>
+                        <i class='bx bxl-python linguagem' style="color: #336E9E;"></i>
+                        <i class='bx bxl-php linguagem' style="color: #7879AF;"></i>
+                    </div>
+                    <div>
+                        <i class='bx bxl-flutter linguagem' style="color: #00C5F7;"></i>
+                        <i class='bx bxl-go-lang linguagem' style="color: #74CBDA;"></i>
+                        <i class='bx bxl-mongodb linguagem' style="color: #489B4C;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim de cursos -->
+
+        <!-- Vagas -->
+        <section>
+            <h1 class="titulo-web vagas">&lt;/Vagas&gt;</h1>
+            <div class="container-align-center">
+                <div class="item">
+                    <img src="imagens/CrowdStrike-logo.jpg" alt="">
+                    <h2>QA Analyst</h2>
+                    <p>Estamos em busca de um QA Analyst apaixonado e proativo para se juntar à nossa equipe dinâmica! Após enfrentar um desafio crítico em nosso sistema, buscamos alguém que possa trazer expertise em testes e garantir a qualidade e a segurança de nossas soluções.</p>
+                    <a href="" class="link-btn">Candidatar</a>
+                </div>
+                <div class="item">
+                    <img src="imagens/CrowdStrike-logo.jpg" alt="">
+                    <h2>QA Analyst</h2>
+                    <p>Estamos em busca de um QA Analyst apaixonado e proativo para se juntar à nossa equipe dinâmica! Após enfrentar um desafio crítico em nosso sistema, buscamos alguém que possa trazer expertise em testes e garantir a qualidade e a segurança de nossas soluções.</p>
+                    <a href="" class="link-btn">Candidatar</a>
+                </div>
+                <div class="item">
+                    <img src="imagens/CrowdStrike-logo.jpg" alt="">
+                    <h2>QA Analyst</h2>
+                    <p>Estamos em busca de um QA Analyst apaixonado e proativo para se juntar à nossa equipe dinâmica! Após enfrentar um desafio crítico em nosso sistema, buscamos alguém que possa trazer expertise em testes e garantir a qualidade e a segurança de nossas soluções.</p>
+                    <a href="" class="link-btn">Candidatar</a>
+                </div>
+
+                <div class="item">
+                    <img src="imagens/apple.jpeg" alt="">
+                    <h2>iOS Developer</h2>
+                    <p>Estamos em busca de um talentoso Desenvolvedor iOS para se juntar à nossa equipe inovadora. Se você é apaixonado por criar experiências excepcionais em aplicativos móveis e tem expertise em Swift, UIKit e design centrado no usuário, queremos ouvir de você!</p>
+                    <a href="" class="link-btn">Candidatar</a>
+                </div>
+
+                <div class="item">
+                    <img src="imagens/google.jpeg" alt="">
+                    <h2>Data Scientist</h2>
+                    <p>Se você é apaixonado por transformar dados em insights poderosos e possui habilidades avançadas em ciência de dados e desenvolvimento, a Google quer você! Estamos buscando um profissional inovador que domine análises estatísticas, machine learning e programação em Python ou R.</p>
+                    <a href="" class="link-btn">Candidatar</a>
+                </div>
+
+                <div class="item">
+                    <img src="imagens/mozilla.png" alt="">
+                    <h2>Extensions Developer</h2>
+                    <p>A Mozilla está em busca de um(a) Desenvolvedor(a) de Extensões talentoso(a) e apaixonado(a) por tecnologia para se juntar à nossa equipe inovadora! Se você tem experiência em JavaScript, HTML e CSS, além de um forte interesse em criar experiências de navegação personalizadas e seguras, essa é a sua chance!</p>
+                    <a href="" class="link-btn">Candidatar</a>
+                </div>
+            </div>
+        </section>
+        <!-- Fim de vagas -->
+
+        <!-- Sobre -->
+        <article>
+            <h1 class="titulo-web sobre">&lt;/Sobre nós&gt;</h1>
+            <p>A <strong>DEVINsane</strong> é uma empresa inovadora dedicada a capacitar futuros programadores e profissionais de tecnologia. Oferecemos uma ampla gama de cursos de programação, desde fundamentos básicos até linguagens avançadas, adaptados para atender tanto iniciantes quanto especialistas. Além disso, disponibilizamos uma plataforma de vagas que conecta talentos a empresas em busca de desenvolvedores qualificados. Nosso enfoque em networking facilita a construção de relacionamentos profissionais, proporcionando oportunidades para colaboração e crescimento na indústria. Para manter nossa comunidade informada sobre tendências e novidades do setor, enviamos uma newsletter mensal recheada de conteúdos relevantes e dicas valiosas. Na <strong>DEVINsane</strong>, seu futuro na tecnologia é nossa prioridade!</p>
+        </article>
+        <!-- Fim de sobre -->
+        
+        <!-- Newsletter -->
+        <aside>
+            <h1 class="titulo-web">&lt;/Newsletter&gt;</h1>
+            <h2>Preencha o formulário abaixo, e acesse a nossa Newsletter!</h2>
+            <form action="cadastro.php" autocomplete="on" method="get">
+                <input type="email" name="email" id="idemail" required autocomplete="email" placeholder="Seu email...">
+                <input type="submit" value="INSCREVER-ME" class="inscreve-btn">
+            </form>
+        </aside>
+        <!-- Fim de newletter -->
+        
+        <!-- Contato -->
+        <section>
+            <h1 class="titulo-web contato">&lt;/Contato&gt;</h1>
+            <h2>Você também pode nos encontrar por aqui:</h2>
+            <div class="container">
+                <a class="redes" href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a class="redes" href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#" class="redes"><i class='bx bxl-facebook-square'></i></a>
+                <a class="redes" href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#" class="redes"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </section>
+
+        <!-- Botão de voltar -->
+        <a href="#" id="back-btn" onclick="voltarScroll()"><i class='bx bx-up-arrow-circle' ></i></a>
+
+    </main>
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-item">
+                <img src="imagens/logo.png" alt="logo da marca">
+            </div>
+            <div class="footer-item">
+                <h2>Links</h2>
+                <a href="#" onclick="">Início</a>
+                <a href="#" onclick="cursScroll()">Cursos</a>
+                <a href="#" onclick="vagaScroll()">Vagas</a>
+                <a href="#" onclick="sobreScroll()">Sobre</a>
+            </div>
+            <div class="footer-item">
+                <h2>Política</h2>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Blog ou Artigos</a>
+                <a href="#">FAQ (Perguntas Frequentes)</a>
+            </div>
+        </div>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/pedrosilvalk/" target="_blank" rel="external"><strong>&copy; Pedro Silva</strong></a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
