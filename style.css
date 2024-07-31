@@ -130,6 +130,7 @@ section.sec-poster {
     background: var(--cor-tema) url('imagens/poster-ini.jpg') center center/cover no-repeat;
     height: 554px;
     margin: auto;
+    text-shadow: 1px 2px 5px var(--cor-fundo);
 }
 .poster {
     display: flex;
@@ -335,11 +336,17 @@ strong {
     h1.titulo-web {
         font-size: 2.8em;
     }
+    h1.poster {
+        font-size: 5em;
+    }
     .cursos h1 {
         font-size: 3em;
     }
     .item-poster-foto {
         width: 220px;
+    }
+    i.linguagem {
+        font-size: 30px;
     }
     .item-center {
         width: 220px;
