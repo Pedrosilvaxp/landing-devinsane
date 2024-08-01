@@ -43,8 +43,7 @@ header {
 }
 .nav-link:hover {
     color: var(--cor-tema);
-    font-weight: lighter;
-    font-size: 19px;
+    background-color: var(--cor-fonte);
 }
 .link-btn {
     background-color: var(--cor-tema);
