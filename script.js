@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
         header.style.top = '-140px';
     } else {
         header.style.top = '0px';
-    };
+    }
 
     ultimoScr = scrollUser <= 0 ? 0 : scrollUser;
 })
@@ -68,16 +68,14 @@ class MobileNavbar {
     }
 
     handleNavLinkClick() {
-        // Remove a classe active quando um link é clicado
         this.navList.classList.remove(this.activeClass);
     }
 
     addClickEvent() {
         this.mobileMenu.addEventListener('click', this.handleClick);
-        // Adiciona o evento de clique para cada link
         this.navLinks.forEach(link => {
             link.addEventListener('click', this.handleNavLinkClick);
-        })
+        });
     }
 
     init() {
@@ -92,6 +90,5 @@ const mobileNavbar = new MobileNavbar(
     '.mobile-btn',
     '.container-mob',
     '.link-mob'
-)
-
+);
 mobileNavbar.init();
