@@ -24,6 +24,18 @@ function autoScroll(chamada) {
     event.preventDefault();
     chamada.scrollIntoView({behavior:'smooth'});
 }
+function cursScroll() {
+    autoScroll(cursoArea);
+}
+function vagaScroll() {
+    autoScroll(vagaArea);
+}
+function sobreScroll() {
+    autoScroll(sobreArea);
+}
+function contScroll() {
+    autoScroll(contatoArea);
+}
 
 // Exibindo botão de voltar 
 const backButton = document.querySelector('#back-btn');
