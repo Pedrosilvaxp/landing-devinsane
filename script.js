@@ -12,29 +12,18 @@ window.addEventListener('scroll', function() {
     };
 
     ultimoScr = scrollUser <= 0 ? 0 : scrollUser;
-});
+})
 
 // Scroll automático
-function cursScroll() {
-    const cursoArea = document.querySelector('.cursos');
+const cursoArea = document.querySelector('.cursos');
+const vagaArea = document.querySelector('.vagas');
+const sobreArea = document.querySelector('.sobre');
+const contatoArea = document.querySelector('.contato');
+
+function autoScroll(chamada) {
     event.preventDefault();
-    cursoArea.scrollIntoView({behavior:'smooth'});
-};
-function vagaScroll() {
-    const vagaArea = document.querySelector('.vagas');
-    event.preventDefault();
-    vagaArea.scrollIntoView({behavior:'smooth'});
-};
-function sobreScroll() {
-    const sobreArea = document.querySelector('.sobre');
-    event.preventDefault();
-    sobreArea.scrollIntoView({behavior:'smooth'});
-};
-function contScroll() {
-    const contatoArea = document.querySelector('.contato');
-    event.preventDefault();
-    contatoArea.scrollIntoView({behavior:'smooth'});
-};
+    chamada.scrollIntoView({behavior:'smooth'});
+}
 
 // Exibindo botão de voltar 
 const backButton = document.querySelector('#back-btn');
@@ -43,12 +32,12 @@ window.onscroll = function() {
         backButton.style.display = 'block';
     } else {
         backButton.style.display = 'none';
-    };
-};
+    }
+}
 function voltarScroll() {
     event.preventDefault();
     scrollTo({top: 0, behavior:'smooth'});
-};
+}
 
 
 // Menu mobile
@@ -60,37 +49,37 @@ class MobileNavbar {
         this.activeClass = 'active';
         this.handleClick = this.handleClick.bind(this);
         this.handleNavLinkClick = this.handleNavLinkClick.bind(this);
-    };
+    }
 
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
-    };
+    }
 
     handleNavLinkClick() {
         // Remove a classe active quando um link é clicado
         this.navList.classList.remove(this.activeClass);
-    };
+    }
 
     addClickEvent() {
         this.mobileMenu.addEventListener('click', this.handleClick);
         // Adiciona o evento de clique para cada link
         this.navLinks.forEach(link => {
             link.addEventListener('click', this.handleNavLinkClick);
-        });
-    };
+        })
+    }
 
     init() {
         if (this.mobileMenu) {
             this.addClickEvent();
         };
         return this;
-    };
-};
+    }
+}
 
 const mobileNavbar = new MobileNavbar(
     '.mobile-btn',
     '.container-mob',
     '.link-mob'
-);
+)
 
 mobileNavbar.init();
